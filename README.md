@@ -47,7 +47,7 @@ scikit-learn, matplotlib, and Dask.
 # Clone this repo
 git clone https://github.com/lesteve/2020-sed-intro-datascience
 cd 2020-sed-introdatascience
-# Create a conda environement with the required packages for this tutorial:
+# Create a conda environment with the required packages for this tutorial:
 conda env create -f environment.yml
 # Activate your conda environment
 conda activate intro-datascience
