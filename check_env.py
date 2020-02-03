@@ -18,12 +18,15 @@ def import_version(pkg, min_ver, fail_msg=""):
         mod = importlib.import_module(pkg)
         if pkg in {'PIL'}:
             try:
-                ver = mod.VERSION
+                ver = mod.__version__
             except AttributeError:
                 try:
-                    ver = mod.PILLOW_VERSION
-                except:
-                    raise
+                    ver = mod.VERSION
+                except AttributeError:
+                    try:
+                        ver = mod.PILLOW_VERSION
+                    except:
+                        raise
         else:
             ver = mod.__version__
         if Version(ver) < min_ver:
@@ -52,9 +55,10 @@ else:
 
 print()
 requirements = {'numpy': "1.16", 'scipy': "1.2", 'matplotlib': "3.0",
-                'IPython': "3.0", 'sklearn': "0.21", 'pandas': "0.24",
+                'IPython': "3.0", 'sklearn': "0.22", 'pandas': "0.24",
                 'PIL': "1.1.7", 'notebook': "5.7", 'plotly': "4.3",
-                'pandas_profiling': "2.3"}
+                'pandas_profiling': "2.3", 'dask': '2.8.1', 'distributed': '2.8.1',
+                'bokeh': '1.2.0'}
 
 # now the dependencies
 for lib, required_version in list(requirements.items()):
