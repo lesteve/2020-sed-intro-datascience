@@ -35,7 +35,7 @@ scikit-learn, matplotlib, and Dask.
 
 ### Install Miniconda
 
-**Only necessary if you don't have conda installed**:
+**This step is only necessary if you don't have conda installed**:
 - download the Miniconda installer for your OS [here](https://docs.conda.io/en/latest/miniconda.html)
 - run the installer following the instructions
   [here](https://conda.io/projects/conda/en/latest/user-guide/install/index.html#regular-installation)
@@ -43,7 +43,7 @@ scikit-learn, matplotlib, and Dask.
 
 ### Create conda environment
 
-```
+```sh
 # Clone this repo
 git clone https://github.com/lesteve/2020-sed-intro-datascience
 cd 2020-sed-introdatascience
