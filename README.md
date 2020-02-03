@@ -11,7 +11,7 @@ This workshop intends to give an introduction to some of these topics using
 Python and the PyData ecosystem. It is not a course on deep learning.
 
 You can run the notebooks in a binder:
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/lesteve/2020-sed-intro-datascience)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/lesteve/2020-sed-intro-datascience/master)
 
 ## Program
 
